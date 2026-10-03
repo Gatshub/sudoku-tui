@@ -1,12 +1,48 @@
 SUDOKU-TUI — un sudoku pour le terminal
 =======================================
 
-Projet : ~/Work/sudoku-tui
-Binaire installé : ~/.local/bin/sudoku-tui  (déjà dans le PATH)
-
 Écrit en Go avec les bibliothèques Charm :
   - Bubble Tea (architecture Elm : Model / Update / View)
   - Lip Gloss (styles, couleurs, mise en page)
+
+Méthode de travail de ce dossier : voir  ~/Work/METHODE.md
+
+--------------------------------------------------------------------
+ÉTAT ACTUEL   (mis à jour le samedi 3 octobre 2026)
+--------------------------------------------------------------------
+
+  Fini et utilisable. Rien en chantier, rien de cassé.
+
+    - Jeu complet : génération de grilles à solution UNIQUE, 4 niveaux,
+      saisie, notes, annuler, indice, pause, minuteur, aide, victoire.
+    - Mise en page adaptative (grille haute / compacte / trop petit) et
+      grille rendue carrée à l'écran.
+    - `go test ./...` passe : logique (sudoku/) + interface (ui/).
+    - Binaire installé et fonctionnel (~/.local/bin/sudoku-tui).
+
+  Ce qui n'est PAS fait (voir « À FAIRE / IDÉES » en bas) :
+    - option « validation immédiate » (aide pour les jeunes) ;
+    - table des scores (nom, date, durée, niveau) ;
+    - changement de difficulté SANS quitter la partie en cours
+      (aujourd'hui la difficulté se choisit au menu de départ).
+
+  Prochaine étape naturelle : la table des scores, puis la validation
+  immédiate.
+
+--------------------------------------------------------------------
+LIEUX
+--------------------------------------------------------------------
+
+  Sources .......... ~/Work/sudoku-tui
+  Binaire installé .. ~/.local/bin/sudoku-tui      (dans le PATH)
+  Compilation ....... ~/Work/sudoku-tui/bin/sudoku-tui   (ignoré par Git)
+  Dépôt Git ......... ~/Work/sudoku-tui/.git       (branche master)
+  Dépôt distant ..... à créer — voir METHODE.md §4.2
+  Données de jeu .... aucune pour l'instant
+                      (la table des scores ira dans
+                       ~/.local/share/sudoku-tui/scores.json)
+  Documentation ..... ~/Work/sudoku-tui/README.txt (ce fichier)
+                      ~/Work/METHODE.md (méthode commune)
 
 --------------------------------------------------------------------
 LANCER
