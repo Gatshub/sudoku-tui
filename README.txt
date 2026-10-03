@@ -37,7 +37,7 @@ LIEUX
   Binaire installé .. ~/.local/bin/sudoku-tui      (dans le PATH)
   Compilation ....... ~/Work/sudoku-tui/bin/sudoku-tui   (ignoré par Git)
   Dépôt Git ......... ~/Work/sudoku-tui/.git       (branche master)
-  Dépôt distant ..... à créer — voir METHODE.md §4.2
+  Dépôt distant ..... https://github.com/Gatshub/sudoku-tui   (privé)
   Données de jeu .... aucune pour l'instant
                       (la table des scores ira dans
                        ~/.local/share/sudoku-tui/scores.json)
