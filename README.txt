@@ -5,8 +5,6 @@ SUDOKU-TUI — un sudoku pour le terminal
   - Bubble Tea (architecture Elm : Model / Update / View)
   - Lip Gloss (styles, couleurs, mise en page)
 
-Méthode de travail de ce dossier : voir  ~/Work/METHODE.md
-
 --------------------------------------------------------------------
 ÉTAT ACTUEL   (mis à jour le samedi 3 octobre 2026)
 --------------------------------------------------------------------
@@ -33,16 +31,15 @@ Méthode de travail de ce dossier : voir  ~/Work/METHODE.md
 LIEUX
 --------------------------------------------------------------------
 
-  Sources .......... ~/Work/sudoku-tui
+  Sources ........... le présent dépôt
   Binaire installé .. ~/.local/bin/sudoku-tui      (dans le PATH)
-  Compilation ....... ~/Work/sudoku-tui/bin/sudoku-tui   (ignoré par Git)
-  Dépôt Git ......... ~/Work/sudoku-tui/.git       (branche master)
-  Dépôt distant ..... https://github.com/Gatshub/sudoku-tui   (privé)
+  Compilation ....... bin/sudoku-tui               (ignoré par Git)
+  Dépôt Git ......... le présent dépôt             (branche master)
+  Dépôt distant ..... https://github.com/Gatshub/sudoku-tui
   Données de jeu .... aucune pour l'instant
                       (la table des scores ira dans
                        ~/.local/share/sudoku-tui/scores.json)
-  Documentation ..... ~/Work/sudoku-tui/README.txt (ce fichier)
-                      ~/Work/METHODE.md (méthode commune)
+  Documentation ..... README.txt (ce fichier)
 
 --------------------------------------------------------------------
 LANCER
@@ -136,7 +133,7 @@ REBUILD / TESTS
 
   Ensuite :
 
-      cd ~/Work/sudoku-tui
+      cd sudoku-tui
       make build      # compile -> bin/sudoku-tui
       make test       # lance tous les tests
       make run        # compile et lance
@@ -152,7 +149,7 @@ DÉSINSTALLER
 --------------------------------------------------------------------
 
       rm ~/.local/bin/sudoku-tui
-      rm -rf ~/Work/sudoku-tui        # supprime aussi les sources
+      rm -rf sudoku-tui               # supprime aussi les sources
 
 --------------------------------------------------------------------
 À FAIRE / IDÉES
